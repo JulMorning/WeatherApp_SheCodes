@@ -1,0 +1,129 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+h1,
+h2 {
+  font-weight: 500;
+  text-align: left;
+}
+h1 {
+  font-size: 70px;
+  line-height: 98px;
+  color: #0c151c;
+}
+h2 {
+  font-size: 30px;
+  line-height: 37px;
+  position: relative;
+  margin-top: -30px;
+}
+h2,
+.humidity,
+.wind,
+.max-temperature,
+.coded-by {
+  color: #4ac5c5;
+}
+.container {
+  display: block;
+  text-align: center;
+  max-width: 60%;
+  background: #ffffff;
+  border: 1px solid #d9d9db;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 50px 70px 20px 70px;
+}
+.search-bar {
+  width: 80%;
+  max-width: 700px;
+  background: #fff;
+  border: 1px solid #4ac5c5;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  color: #0c151c;
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  color: #0c151c;
+}
+.search-bar button {
+  width: 100px;
+  padding: 10px;
+  border: 0;
+  border-radius: 30px;
+  background: #4ac5c5;
+  cursor: pointer;
+  color: #fff;
+}
+.container-current-weather {
+  margin: 70px auto;
+  text-align: left;
+  text-align: inherit;
+}
+
+.col forcast {
+  width: 100px;
+}
+.current-weather-img {
+  font-size: 100px;
+}
+.current-weather-temp {
+  font-size: 70px;
+}
+.current-weather-details {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666464;
+  position: relative;
+  margin-left: -15px;
+  margin-top: 15px;
+}
+.units {
+  position: relative;
+  top: -38px;
+  text-decoration: none;
+
+}
+.unitCelsius,
+.unitFahrenheit{
+text-decoration: none;}
+}
+.week-day-forcast {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.day-sign-forcast {
+  font-size: 40px;
+}
+.max-temperature {
+  font-size: 20px;
+}
+.min-temperature,
+.max-temperature {
+  font-weight: 500;
+}
+.min-temperature {
+  font-size: 20px;
+}
+.container-forcast-weather {
+  margin: 70px auto;
+}
+.coded-by {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}

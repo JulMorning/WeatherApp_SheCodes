@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forcast App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-bar">
+        <input
+          id="search-text-input"
+          type="text"
+          placeholder="Enter City"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div class="container-current-weather">
+        <div class="row">
+          <div class="col">
+            <h1>Kyiv</h1>
+            <br />
+            <h2>Ukraine</h2>
+          </div>
+          <div class="col">
+            <div class="current-weather-details">
+              <ul>
+                <li>Clear sky</li>
+                <li>Humidity:<span class="humidity"> 59%</span></li>
+                <li>Wind: <span class="wind">8 km/h</span></li>
+                <li id="lastUpdate"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <span class="current-weather-img">🌤 </span>
+            <span class="current-weather-temp" id="temperature"> 13 </span>
+            <span class="units"
+              ><a class="unitCelsius" href="#" id="celsius-link">ºC</a> |
+              <a class="unitFahrenheit" href="#" id="fahrenheit-link"
+                >ºF</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container-forcast-weather">
+        <div class="row forcast">
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Mon</span></li>
+              <li><span class="day-sign-forcast">☀️</span></li>
+              <li>
+                <span class="max-temperature">16º / </span
+                ><span class="min-temperature">3º</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Tue</span></li>
+              <li><span class="day-sign-forcast">☀️</span></li>
+              <li>
+                <span class="max-temperature">20º / </span>
+                <span class="min-temperature">8º</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Wed</span></li>
+              <li><span class="day-sign-forcast">🌧</span></li>
+              <li>
+                <span class="max-temperature">15º / </span>
+                <span class="min-temperature">8º</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Thu</span></li>
+              <li><span class="day-sign-forcast">☁️</span></li>
+              <li>
+                <span class="max-temperature">9º / </span>
+                <span class="min-temperature">5º</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Fri</span></li>
+              <li><span class="day-sign-forcast">🌤</span></li>
+              <li>
+                <span class="max-temperature">9º / </span>
+                <span class="min-temperature">3º</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col forcast">
+            <ul>
+              <li><span class="week-day-forcast">Sat</span></li>
+              <li><span class="day-sign-forcast">🌧</span></li>
+              <li>
+                <span class="max-temperature">10º / </span>
+                <span class="min-temperature">3º</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="coded-by">Coded by Yuliia Klan © 2022</p>
+
+      <script src="week4_hw.js"></script>
+    </div>
+  </body>
+</html>
