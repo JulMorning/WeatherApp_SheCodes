@@ -24,19 +24,24 @@ h2 {
 h2,
 .humidity,
 .wind,
-.max-temperature,
-.coded-by {
-  color: #4ac5c5;
+.max-temperature
+{
+  color:#4ac5c5;
 }
 .container {
   display: block;
-  text-align: center;
-  max-width: 60%;
+  margin: auto;
+}
+.card{
+  display: block;
+  margin: auto;
+  max-width: 80%;
   background: #ffffff;
   border: 1px solid #d9d9db;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 50px 70px 20px 70px;
+  text-align: center;
 }
 .search-bar {
   width: 80%;
@@ -120,10 +125,15 @@ text-decoration: none;}
   font-size: 20px;
 }
 .container-forcast-weather {
-  margin: 70px auto;
+  margin: 70px auto 30px ;
 }
 .coded-by {
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
+  position: absolute;
+  left: 2px;
+  bottom: -50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666464;
 }
+.open-source{
+text-decoration: none;}
