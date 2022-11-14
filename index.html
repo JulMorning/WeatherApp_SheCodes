@@ -24,25 +24,22 @@
   <body>
     <div class="card">
       <div class="container">
-        <form class="search-bar">
-          <input
-            id="search-text-input"
-            type="text"
-            placeholder="Enter City"
-            autocomplete="off"
-            autofocus="on"
-          />
-          <button type="submit">Search</button>
-        </form>
-        <form class="current-location">
-          <input
-            id="search-text-input"
-            type="text"
-            placeholder="Enter City"
-            autocomplete="off"
-            autofocus="on"
-          />
-          <button type="submit">Search</button>
+        <form class="row g-3">
+          <div class="col-auto">
+            <input
+              id="search-text-input"
+              type="text"
+              placeholder="Enter City"
+              autocomplete="off"
+              autofocus="on"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit">Search</button>
+          </div>
+          <div class="col-auto">
+            <button type="submit">Current</button>
+          </div>
         </form>
       </div>
       <div class="container-current-weather">
