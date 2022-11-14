@@ -18,13 +18,14 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Weather Forcast App</title>
   </head>
   <body>
     <div class="card">
       <div class="container">
-        <form class="row g-3">
+        <form class="row g-3" id="search-bar">
           <div class="col-auto">
             <input
               id="search-text-input"
@@ -35,29 +36,23 @@
             />
           </div>
           <div class="col-auto">
-            <button type="submit">Search</button>
+            <button type="submit" class="search-button">Search</button>
           </div>
           <div class="col-auto">
-            <button type="submit">Current</button>
+            <button type="submit" class="current-button">Current</button>
           </div>
         </form>
       </div>
+      <div class="current-city"><h1>Kyiv, Ukraine</h1></div>
       <div class="container-current-weather">
         <div class="row">
           <div class="col">
-            <h1>Kyiv</h1>
-            <br />
-            <h2>Ukraine</h2>
-          </div>
-          <div class="col">
-            <div class="current-weather-details">
-              <ul>
-                <li>Clear sky</li>
-                <li>Humidity:<span class="humidity"> 59%</span></li>
-                <li>Wind: <span class="wind">8 km/h</span></li>
-                <li id="lastUpdate"></li>
-              </ul>
-            </div>
+            <ul class="current-weather-details">
+              <li id="lastUpdate"></li>
+              <li>Clear sky</li>
+              <li>Humidity:<span class="humidity"> 59%</span></li>
+              <li>Wind: <span class="wind">8 km/h</span></li>
+            </ul>
           </div>
           <div class="col">
             <span class="current-weather-img">🌤 </span>
@@ -72,8 +67,8 @@
         </div>
       </div>
       <div class="container-forcast-weather">
-        <div class="row-forcast">
-          <div class="col-forcast">
+        <div class="row g-6">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Mon</span></li>
               <li><span class="day-sign-forcast">☀️</span></li>
@@ -84,7 +79,7 @@
             </ul>
           </div>
 
-          <div class="col-forcast">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Tue</span></li>
               <li><span class="day-sign-forcast">☀️</span></li>
@@ -94,7 +89,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-forcast">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Wed</span></li>
               <li><span class="day-sign-forcast">🌧</span></li>
@@ -104,7 +99,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-forcast">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Thu</span></li>
               <li><span class="day-sign-forcast">☁️</span></li>
@@ -114,7 +109,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-forcast">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Fri</span></li>
               <li><span class="day-sign-forcast">🌤</span></li>
@@ -124,7 +119,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-forcast">
+          <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Sat</span></li>
               <li><span class="day-sign-forcast">🌧</span></li>

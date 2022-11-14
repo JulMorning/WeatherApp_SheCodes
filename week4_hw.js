@@ -35,7 +35,7 @@ function search(event) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${searchInput.value}`;
 }
-let form = document.querySelector(".search-bar");
+let form = document.querySelector("#search-bar");
 form.addEventListener("submit", search);
 
 function convertToFahrenheit(event) {
@@ -59,3 +59,21 @@ function convertToCelsius(event) {
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+function showTemperature(response) {
+  console.log(response.data.main.temp);
+  let temperature = Math.round(response.data.main.temp);
+  let localTemperature = document.querySelector("#temperature");
+  localTemperature.innerHTML = `${temperature}`;
+}
+function showLocation(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let units = "metric";
+  let apiKey = "5dd071644aff4379355022a20839a99e";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  console.log(apiUrl);
+
+  axios.get(apiUrl).then(showTemperature);
+}
+navigator.geolocation.getCurrentPosition(showLocation);
