@@ -14,6 +14,7 @@ h1 {
   font-size: 70px;
   line-height: 98px;
   color: #0c151c;
+  margin: 70px 0 10px 0;
 }
 h2 {
   font-size: 30px;
@@ -44,7 +45,7 @@ h2,
   text-align: center;
 }
 .search-bar {
-  width: 80%;
+  width: 50%;
   max-width: 700px;
   background: #fff;
   border: 1px solid #4ac5c5;
@@ -78,8 +79,9 @@ h2,
   text-align: inherit;
 }
 
-.col forcast {
+.col-forcast {
   width: 100px;
+  margin: 0;
 }
 .current-weather-img {
   font-size: 100px;
