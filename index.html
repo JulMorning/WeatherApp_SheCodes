@@ -25,7 +25,7 @@
   <body>
     <div class="card">
       <div class="container">
-        <form class="row g-3" id="search-bar">
+        <form class="row g-3 gy-2 align-items-center" id="search-bar">
           <div class="col-auto">
             <input
               id="search-text-input"
@@ -43,20 +43,20 @@
           </div>
         </form>
       </div>
-      <div class="current-city"><h1>Kyiv, Ukraine</h1></div>
+      <div class="current-city"><h1 id="city"></h1></div>
       <div class="container-current-weather">
-        <div class="row">
+        <div class="row gy-2 align-items-center">
           <div class="col">
             <ul class="current-weather-details">
               <li id="lastUpdate"></li>
-              <li>Clear sky</li>
-              <li>Humidity:<span class="humidity"> 59%</span></li>
-              <li>Wind: <span class="wind">8 km/h</span></li>
+              <li><span id="description"></span></li>
+              <li>Humidity: <span id="humidity"></span> %</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
           <div class="col">
             <span class="current-weather-img">🌤 </span>
-            <span class="current-weather-temp" id="temperature"> 13 </span>
+            <span class="current-weather-temp" id="temperature"></span>
             <span class="units"
               ><a class="unitCelsius" href="#" id="celsius-link">ºC</a> |
               <a class="unitFahrenheit" href="#" id="fahrenheit-link"
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div class="container-forcast-weather">
-        <div class="row g-6">
+        <div class="row g-6 gy-2 align-items-center">
           <div class="col-auto">
             <ul>
               <li><span class="week-day-forcast">Mon</span></li>
